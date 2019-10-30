@@ -1,5 +1,5 @@
 server:
-  port: 7910
+  port: 7990
 eureka:
   client:
     service-url:
@@ -9,4 +9,7 @@ eureka:
     lease-renewal-interval-in-seconds: 2   #eureka注册中心剔除间隔
 spring:
   application:
-    name: consumer
+    name: feign
+feign:
+  hystrix:
+    enabled: true

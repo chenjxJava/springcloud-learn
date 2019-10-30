@@ -1,4 +1,4 @@
-package com.chenjx.springcloud.consumer;
+package com.chenjx.springcloud.consumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-public class ConsumerController {
+public class ConsumerRibbonController {
 
     @Bean
     @LoadBalanced
